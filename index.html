@@ -1,34 +1,363 @@
 <!DOCTYPE html>
-<html lang="en" dir="rtl">
+<html lang="fa" dir="rtl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>فروشگاه لوازم کامپیوتر</title>
 </head>
+
 <body>
 
     <main id="main">
         <div class="container">
-            <div class="tabs-btn">
-                <button class="btn active" data-btn="1">تصویر 1</button>
-                <button class="btn" data-btn="2">تصویر 2</button>
-                <button class="btn" data-btn="3">تصویر 3</button>
+            <!-- Sidebar -->
+            <div class="sidebar">
+                <div class="logo">
+                    <i class="fa-solid fa-microchip"></i>
+                    <h2>تک استور</h2>
+                </div>
+                <div class="tabs-btn">
+                    <button class="btn active" data-btn="keyboard">
+                        <i class="fa-solid fa-keyboard"></i>
+                        <span>کیبورد</span>
+                    </button>
+                    <button class="btn" data-btn="monitor">
+                        <i class="fa-solid fa-desktop"></i>
+                        <span>مانیتور</span>
+                    </button>
+                    <button class="btn" data-btn="mouse">
+                        <i class="fa-solid fa-computer-mouse"></i>
+                        <span>ماوس</span>
+                    </button>
+                    <button class="btn" data-btn="laptop">
+                        <i class="fa-solid fa-laptop"></i>
+                        <span>لپ‌تاپ</span>
+                    </button>
+                </div>
             </div>
-            <div class="tabs-content">
-                <div class="content active" data-content="1">
-                    <img src="./images/t1.png" alt="">
-                </div>
-                <div class="content" data-content="2">
-                    <img src="./images/t2.png" alt="">
-                </div>
-                <div class="content" data-content="3">
-                    <img src="./images/t3.png" alt="">
-                </div>
-            </div>
-        </div>
-    </main>
 
-    <script src="script.js"></script>
-</body>
-</html>
+            <!-- Main Content -->
+            <div class="content-area">
+                <div class="header">
+                    <h1>محصولات ویژه</h1>
+                    <div class="user-profile">
+                        <i class="fa-solid fa-user-circle"></i>
+                    </div>
+                </div>
+
+                <div class="tabs-content">
+                    <!-- Keyboard Content -->
+                    <div class="content active" data-content="keyboard">
+                        <div class="product-grid">
+                            <div class="product-card">
+                                <div class="product-image"><i class="fa-solid fa-keyboard"></i></div>
+                                <h3>کیبورد مکانیکی RGB</h3>
+                                <p class="price">۲,۵۰۰,۰۰۰ تومان</p>
+                                <button class="buy-btn">افزودن به سبد</button>
+                            </div>
+                            <div class="product-card">
+                                <div class="product-image"><i class="fa-solid fa-keyboard"></i></div>
+                                <h3>کیبورد بی‌سیم حرفه‌ای</h3>
+                                <p class="price">۱,۸۰۰,۰۰۰ تومان</p>
+                                <button class="buy-btn">افزودن به سبد</button>
+                            </div>
+                            <div class="product-card">
+                                <div class="product-image"><i class="fa-solid fa-keyboard"></i></div>
+                                <h3>کیبورد گیمینگ</h3>
+                                <p class="price">۳,۲۰۰,۰۰۰ تومان</p>
+                                <button class="buy-btn">افزودن به سبد</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Monitor Content -->
+                    <div class="content" data-content="monitor">
+                        <div class="product-grid">
+                            <div class="product-card">
+                                <div class="product-image"><i class="fa-solid fa-desktop"></i></div>
+                                <h3>مانیتور ۲۷ اینچ 4K</h3>
+                                <p class="price">۱۵,۰۰۰,۰۰۰ تومان</p>
+                                <button class="buy-btn">افزودن به سبد</button>
+                            </div>
+                            <div class="product-card">
+                                <div class="product-image"><i class="fa-solid fa-desktop"></i></div>
+                                <h3>مانیتور خمیده گیمینگ</h3>
+                                <p class="price">۱۲,۵۰۰,۰۰۰ تومان</p>
+                                <button class="buy-btn">افزودن به سبد</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Mouse Content -->
+                    <div class="content" data-content="mouse">
+                        <div class="product-grid">
+                            <div class="product-card">
+                                <div class="product-image"><i class="fa-solid fa-computer-mouse"></i></div>
+                                <h3>ماوس گیمینگ سبک</h3>
+                                <p class="price">۱,۲۰۰,۰۰۰ تومان</p>
+                                <button class="buy-btn">افزودن به سبد</button>
+                            </div>
+                            <div class="product-card">
+                                <div class="product-image"><i class="fa-solid fa-computer-mouse"></i></div>
+                                <h3>ماوس ارگونومیک</h3>
+                                <p class="price">۹۰۰,۰۰۰ تومان</p>
+                                <button class="buy-btn">افزودن به سبد</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Laptop Content -->
+                    <div class="content" data-content="laptop">
+                        <div class="product-grid">
+                            <div class="product-card">
+                                <div class="product-image"><i class="fa-solid fa-laptop"></i></div>
+                                <h3>لپ‌تاپ گیمینگ سری X</h3>
+                                <p class="price">۶۵,۰۰۰,۰۰۰ تومان</p>
+                                <button class="buy-btn">افزودن به سبد</button>
+                            </div>
+                            <div class="product-card">
+                                <div class="product-image"><i class="fa-solid fa-laptop"></i></div>
+                                <!DOCTYPE html>
+                                <html lang="fa" dir="rtl">
+
+                                <head>
+                                    <meta charset="UTF-8">
+                                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                                    <link rel="stylesheet" href="./style.css">
+                                    <link rel="stylesheet"
+                                        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+                                    <title>فروشگاه لوازم کامپیوتر</title>
+                                </head>
+
+                                <body>
+
+                                    <main id="main">
+                                        <div class="container">
+                                            <!-- Sidebar -->
+                                            <div class="sidebar">
+                                                <div class="logo">
+                                                    <i class="fa-solid fa-microchip"></i>
+                                                    <h2>تک استور</h2>
+                                                </div>
+                                                <div class="tabs-btn">
+                                                    <button class="btn active" data-btn="keyboard">
+                                                        <i class="fa-solid fa-keyboard"></i>
+                                                        <span>کیبورد</span>
+                                                    </button>
+                                                    <button class="btn" data-btn="monitor">
+                                                        <i class="fa-solid fa-desktop"></i>
+                                                        <span>مانیتور</span>
+                                                    </button>
+                                                    <button class="btn" data-btn="mouse">
+                                                        <i class="fa-solid fa-computer-mouse"></i>
+                                                        <span>ماوس</span>
+                                                    </button>
+                                                    <button class="btn" data-btn="laptop">
+                                                        <i class="fa-solid fa-laptop"></i>
+                                                        <span>لپ‌تاپ</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+
+                                            <!-- Main Content -->
+                                            <div class="content-area">
+                                                <div class="header">
+                                                    <h1>محصولات ویژه</h1>
+                                                    <div class="user-profile">
+                                                        <i class="fa-solid fa-user-circle"></i>
+                                                    </div>
+                                                </div>
+
+                                                <div class="tabs-content">
+                                                    <!-- Keyboard Content -->
+                                                    <div class="content active" data-content="keyboard">
+                                                        <div class="product-grid">
+                                                            <div class="product-card">
+                                                                <div class="product-image"><i
+                                                                        class="fa-solid fa-keyboard"></i></div>
+                                                                <h3>کیبورد مکانیکی RGB</h3>
+                                                                <p class="price">۲,۵۰۰,۰۰۰ تومان</p>
+                                                                <button class="buy-btn">افزودن به سبد</button>
+                                                            </div>
+                                                            <div class="product-card">
+                                                                <div class="product-image"><i
+                                                                        class="fa-solid fa-keyboard"></i></div>
+                                                                <h3>کیبورد بی‌سیم حرفه‌ای</h3>
+                                                                <p class="price">۱,۸۰۰,۰۰۰ تومان</p>
+                                                                <button class="buy-btn">افزودن به سبد</button>
+                                                            </div>
+                                                            <div class="product-card">
+                                                                <div class="product-image"><i
+                                                                        class="fa-solid fa-keyboard"></i></div>
+                                                                <h3>کیبورد گیمینگ</h3>
+                                                                <p class="price">۳,۲۰۰,۰۰۰ تومان</p>
+                                                                <button class="buy-btn">افزودن به سبد</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- Monitor Content -->
+                                                    <div class="content" data-content="monitor">
+                                                        <div class="product-grid">
+                                                            <div class="product-card">
+                                                                <div class="product-image"><i
+                                                                        class="fa-solid fa-desktop"></i></div>
+                                                                <h3>مانیتور ۲۷ اینچ 4K</h3>
+                                                                <p class="price">۱۵,۰۰۰,۰۰۰ تومان</p>
+                                                                <button class="buy-btn">افزودن به سبد</button>
+                                                            </div>
+                                                            <div class="product-card">
+                                                                <div class="product-image"><i
+                                                                        class="fa-solid fa-desktop"></i></div>
+                                                                <h3>مانیتور خمیده گیمینگ</h3>
+                                                                <p class="price">۱۲,۵۰۰,۰۰۰ تومان</p>
+                                                                <button class="buy-btn">افزودن به سبد</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- Mouse Content -->
+                                                    <div class="content" data-content="mouse">
+                                                        <div class="product-grid">
+                                                            <div class="product-card">
+                                                                <div class="product-image"><i
+                                                                        class="fa-solid fa-computer-mouse"></i></div>
+                                                                <h3>ماوس گیمینگ سبک</h3>
+                                                                <p class="price">۱,۲۰۰,۰۰۰ تومان</p>
+                                                                <button class="buy-btn">افزودن به سبد</button>
+                                                            </div>
+                                                            <div class="product-card">
+                                                                <div class="product-image"><i
+                                                                        class="fa-solid fa-computer-mouse"></i></div>
+                                                                <h3>ماوس ارگونومیک</h3>
+                                                                <p class="price">۹۰۰,۰۰۰ تومان</p>
+                                                                <button class="buy-btn">افزودن به سبد</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- Laptop Content -->
+                                                    <div class="content" data-content="laptop">
+                                                        <div class="product-grid">
+                                                            <div class="product-card">
+                                                                <div class="product-image"><i
+                                                                        class="fa-solid fa-laptop"></i></div>
+                                                                <h3>لپ‌تاپ گیمینگ سری X</h3>
+                                                                <p class="price">۶۵,۰۰۰,۰۰۰ تومان</p>
+                                                                <button class="buy-btn">افزودن به سبد</button>
+                                                            </div>
+                                                            <div class="product-card">
+                                                                <div class="product-image"><i
+                                                                        class="fa-solid fa-laptop"></i></div>
+                                                                <h3>لپ‌تاپ اولترابوک</h3>
+                                                                <p class="price">۴۵,۰۰۰,۰۰۰ تومان</p>
+                                                                <button class="buy-btn">افزودن به سبد</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- Product Details Overlay -->
+                                            <div id="product-details" class="product-details hidden">
+                                                <div class="details-header">
+                                                    <button id="back-btn" class="back-btn">
+                                                        <i class="fa-solid fa-arrow-right"></i> بازگشت
+                                                    </button>
+                                                </div>
+
+                                                <div class="details-content">
+                                                    <div class="product-main-info">
+                                                        <div class="product-img-large">
+                                                            <i class="fa-solid fa-image"></i>
+                                                        </div>
+                                                        <div class="product-info-text">
+                                                            <h2 id="detail-title">عنوان محصول</h2>
+                                                            <div class="rating">
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-regular fa-star"></i>
+                                                                <span>(۴.۰)</span>
+                                                            </div>
+                                                            <p class="price-large" id="detail-price">۲,۵۰۰,۰۰۰ تومان</p>
+
+                                                            <div class="options">
+                                                                <div class="option-group">
+                                                                    <label>رنگ:</label>
+                                                                    <div class="color-selector">
+                                                                        <div class="color-option selected"
+                                                                            style="background-color: #333;"
+                                                                            data-color="مشکی"></div>
+                                                                        <div class="color-option"
+                                                                            style="background-color: #fff;"
+                                                                            data-color="سفید"></div>
+                                                                        <div class="color-option"
+                                                                            style="background-color: #ff0000;"
+                                                                            data-color="قرمز"></div>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="option-group">
+                                                                    <label>تعداد:</label>
+                                                                    <div class="quantity-selector">
+                                                                        <button class="qty-btn"
+                                                                            id="qty-minus">-</button>
+                                                                        <span id="qty-value">1</span>
+                                                                        <button class="qty-btn" id="qty-plus">+</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <button class="add-to-cart-btn">
+                                                                <i class="fa-solid fa-cart-plus"></i> افزودن به سبد خرید
+                                                            </button>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="product-tabs-section">
+                                                        <div class="p-tabs-header">
+                                                            <button class="p-tab-btn active"
+                                                                data-ptab="desc">توضیحات</button>
+                                                            <button class="p-tab-btn" data-ptab="specs">مشخصات</button>
+                                                            <button class="p-tab-btn"
+                                                                data-ptab="comments">نظرات</button>
+                                                        </div>
+                                                        <div class="p-tabs-body">
+                                                            <div class="p-content active" data-pcontent="desc">
+                                                                <p>این محصول با کیفیت بالا و طراحی ارگونومیک، تجربه‌ای
+                                                                    بی‌نظیر را برای شما فراهم می‌کند. مناسب برای
+                                                                    استفاده‌های طولانی مدت و حرفه‌ای.</p>
+                                                            </div>
+                                                            <div class="p-content" data-pcontent="specs">
+                                                                <ul>
+                                                                    <li>وزن: ۵۰۰ گرم</li>
+                                                                    <li>ابعاد: ۳۰x۲۰ سانتی‌متر</li>
+                                                                    <li>نوع اتصال: بی‌سیم</li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="p-content" data-pcontent="comments">
+                                                                <div class="comment">
+                                                                    <strong>علی:</strong>
+                                                                    <p>بسیار عالی و با کیفیت. پیشنهاد می‌کنم.</p>
+                                                                </div>
+                                                                <div class="comment">
+                                                                    <strong>سارا:</strong>
+                                                                    <p>نسبت به قیمت ارزش خرید بالایی دارد.</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </main>
+
+                                    <script src="script.js"></script>
+                                </body>
+
+                                </html>
